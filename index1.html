@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Website Accesibility</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ninja Survey</h1>
+    </header>
+    <section>
+        <form>
+            <p tabindex="0">Instructions: Fill in ALL your information then click <b>Submit</b></p>
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+            <fieldset>
+                <legend>What level ninja are you?</legend>
+                <input type="radio" name="Levels" id="newbie">Newbie Kitten
+                <br>
+                <input type="radio" name="Levels" id="student">Developing Student
+                <br>
+                <input type="radio" name="Levels" id="master">9th Life Master
+            </fieldset>
+            <fieldset>
+                <legend>Select your favorite weapons:</legend>
+                <input type="checkbox" name="weapons" id="stars">Throwing Stars
+                <br>
+                <input type="checkbox" name="weapons" id="nunchucks">Nunchucks
+                <br>
+                <input type="checkbox" name="weapons" id="saiSet">Sai Set
+                <br>
+                <input type="checkbox" name="weapons" id="sword">Sword
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+        </form><br>
+    </section>
+    <footer>
+        &copy;2021 Camper Cat
+    </footer>
+    </form>
+    </section>
+</body>
+
+</html>
