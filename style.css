@@ -1,0 +1,13 @@
+#sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+}
+
+body {
+    color: rgb(142, 255, 255);
+    background-color: rgb(11, 92, 92);
+}

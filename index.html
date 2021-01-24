@@ -5,30 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Accesibility</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Training</h1>
+        <section>
+            <form>
+                <h1>Deep Thoughts With Master Camper Cat</h1>
+                <p>Sign up to receive Camper Cat's blog posts by email here!</p>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                </form>
+                <fieldset>
+                    <legend>What level ninja are you?</legend>
+                    <input type="radio" name="level" id="Newbie" value="Newbie">
+                    <label for="Newbie">Newbie Kitten</label>
+                    <br>
+                    <input type="radio" name="level" id="Student" value="Student">
+                    <label for="Student">Developing Student</label>
+                    <br>
+                    <input type="radio" name="level" id="Master" value="Master">
+                    <label for="Master">Master</label>
+                </fieldset>
+                <form>
+                    <p>Tell us the best date for the competition</p>
+                    <label for="pickdate">Preferred Date:</label>
+                    <input type="date" name="date" id="pickdate">
+                </form>
+                <input type="submit" value="Submit">
+                </>
+        </section>
         <nav>
             <ul>
                 <li>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="http://" target="_blank" rel="noopener noreferrer" accesskey="s">
                         Stealth & Agility
                     </a></li>
                 <li>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="http://" target="_blank" rel="noopener noreferrer" accesskey="c">
                         Combat
                     </a>
                 </li>
                 <li>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="http://" target="_blank" rel="noopener noreferrer" accesskey="w">
                         Weapons
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <main>
         <figure>
             <img src="roundhouseDestruction.jpeg" alt="Photo of CamperCat executing a roundhouse kick">
@@ -65,6 +93,54 @@
                 <h3>Breadth-first or depth-first in multi-weapon training?</h3>
             </article>
         </section>
+
+        <section>
+            <figure>
+                <!-- Stacked bar chart of weekly training -->
+                <p>[Stacked bar chart]</p>
+                <br />
+                <figcaption>Breakdown per week of time to spend training in stealth, combat, and weapons.</figcaption>
+            </figure>
+        </section>
+        <table id="sr-only">
+            <caption>Hours of Weekly Training in Stealth, Combat, and Weapons</caption>
+            <thead>
+                <th></th>
+                <th>Stealth &amp Agility</th>
+                <th>Combat</th>
+                <th>Weapons</th>
+                <th>Total</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Week One</th>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>Week Two</th>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>
+                        Week Three
+                    </th>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>13</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Thank you to everyone for responding to Master Camper Cat's survey. The best day to host the vaunted
+            Mortal Kombat
+            tournament is <time datetime="2016-09-15">Thursday, September 15<sup>th</sup></time>. May the best ninja
+            win!</p>
     </main>
     <footer>
         &copy; 2018 Camper Cat
